@@ -1,3 +1,13 @@
+# TODO
+
+Make a computer with moving text on the screen using the squares from previous animation.
+
+1. Find a nice flat design computer
+
+2. Choose a nice animation
+
+3. Animate using CSS
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
