@@ -43,6 +43,7 @@ h1 {
   color: #023F92;
   position: relative;
   top: 50px;
+  mix-blend-mode: color-dodge;
 }
 
 
@@ -60,7 +61,7 @@ h1 {
 }
 .blob2 {
   z-index: 2;
-  animation: move 8s ease-in-out infinite;
+  animation: move 11s ease-in-out infinite;
   transform-origin: 60% 70%;
 }
 .blob3 {
@@ -70,7 +71,7 @@ h1 {
 }
 .blob4 {
   z-index: 4;
-  animation: move 9s ease-in-out infinite;
+  animation: move 12s ease-in-out infinite;
   transform-origin: 70% 60%;
 }
 
@@ -162,6 +163,14 @@ h1 {
   animation: shake-lr 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
+.expandText {
+  animation: expandText 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+.collapseText {
+  animation: collapsingText 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
 @keyframes glowingText {
   0% {
     transform: translateY(0px);
@@ -175,6 +184,12 @@ h1 {
     transform: translateY(0px);
     /* font-size: 10px; */
   }
+}
+
+@keyframes expandText {
+  0% { letter-spacing: -0.5em; opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 1; }
 }
 
 @keyframes collapsingText {

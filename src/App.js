@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>BLOBS ARE <br />COOL RIGHT?</h1> {/* Yeah I know this is bad, inline elements but H1 seo is more important */}
+        <h1 className="expandText">BLOBS ARE <br />COOL RIGHT?</h1> {/* Yeah I know this is bad, inline elements but H1 seo is more important */}
         <img src={blob1} className="blob blob1" alt="blob" />
         <img src={blob2} className="blob blob2" alt="blob" />
         <img src={blob3} className="blob blob3" alt="blob" />
