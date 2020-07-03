@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import pc from './pc.svg'
+import pc from './pc.svg';
+import blob1 from './images/blob1.svg';
+import blob2 from './images/blob2.svg';
+import blob3 from './images/blob3.svg';
+import blob4 from './images/blob4.svg';
 
 function App() {
   const [animationState, setAnimationState] = useState('');
@@ -34,9 +38,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
-
-        <button className="but" onClick={() => { animationState ? setAnimationState('') : setAnimationState('animating') }}>Toggle animation</button>
+        <h1>BLOBS ARE <br />COOL RIGHT?</h1> {/* Yeah I know this is bad, inline elements but H1 seo is more important */}
+        <img src={blob1} className="blob blob1" alt="blob" />
+        <img src={blob2} className="blob blob2" alt="blob" />
+        <img src={blob3} className="blob blob3" alt="blob" />
+        <img src={blob4} className="blob blob4" alt="blob" />
+      </header>
+      <article>
 
         <div className="computer">
           <img src={pc} className="computer" alt="computer" />
@@ -55,8 +63,9 @@ function App() {
             <span className="key key9"></span>
             <span className="key key10"></span>
           </div>
+          <button className="but" onClick={() => { animationState ? setAnimationState('') : setAnimationState('animating') }}>Toggle animation</button>
         </div>
-      </header>
+      </article>
     </div>
   );
 }
